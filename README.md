@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This project was created by redux and react hooks
 
 ## Available Features
@@ -16,3 +17,6 @@ This project was created by redux and react hooks
 - Created By Who
 - Drag and Drop
 - View all todo by user id
+=======
+# redux-basic-todo
+>>>>>>> 7fc09b6a66375731cb78860995a3dbc77db199db
