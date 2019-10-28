@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { toggleTodo } from "../actions";
+import { completeTodo } from "../api";
 import Todos from "./Todos";
 
 export default function CompletedTodos() {
@@ -10,7 +10,7 @@ export default function CompletedTodos() {
       todos: state.todos
     };
   });
-  const onToggle = useCallback(id => dispatch(toggleTodo(id)), [dispatch]);
+  const onToggle = useCallback(id => dispatch(completeTodo(id)), [dispatch]);
   const todoComplete = todos.filter(t => t.completed)
-  return <Todos todos={todoComplete} toogleTodo={onToggle} />;
+  return <Todos todos={todoComplete} completeTodo={onToggle} />;
 }
