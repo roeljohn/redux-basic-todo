@@ -25,8 +25,9 @@ const todos = (state = [], action) => {
         todo.id === action.id ? { ...todo, completed: !todo.completed } : todo
       );
     case "COMPLETE_TODO":
-        const commentId = action.id;
-        return state.filter(todo => todo.id !== commentId);
+        return state.map(todo =>
+          todo.id === action.id ? { ...todo, completed: !todo.completed } : todo
+        );
     case "FetchData":
         return action.todos;
     default:

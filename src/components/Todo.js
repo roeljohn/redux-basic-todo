@@ -4,6 +4,7 @@ import CompleteTodo from './CompleteTodo'
 
 const Todo = ({ onClick, completed, title }) => (
     <li className={`task-info ui-sortable-handle ${completed ? "line-through" : "none"}`} id="task17">
+        {completed ? 'true ' : 'false '}
         <CompleteTodo completed={completed ? true : false} onClick={onClick} />
         {title}
         <div className="clearfix"></div>

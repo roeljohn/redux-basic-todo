@@ -2,9 +2,9 @@ import React, { Component, useCallback } from 'react';
 import UpcomingTodos from './components/UpcomingTodos'
 import AddTodo from './components/AddTodo'
 import { connect, useDispatch } from 'react-redux'
-import { fetchAllTodos, fetchTodoById } from './api'
+import { fetchAllTodos, fetchTodoById, completeTodo } from './api'
 import CompleteTodos from './components/CompletedTodos';
-import { completeTodo } from "./actions";
+// import { completeTodo } from "./actions";
 
 
 class App extends Component {
